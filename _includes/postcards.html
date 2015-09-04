@@ -1,0 +1,12 @@
+<div class="media media-head-ad"><div class="media-left media-middle"><a href="#"><img src="/assets/img/jb-tat-mini-150.png" alt="Placeholder Image" width="75px" class="img-circle"/></a></div><div class="media-body media-body-ad"><h4 class="media-heading">like a <strong>Jekyll</strong>antern</h4><p>Hi, this site was curated with the <mark>Atom</mark> text editor. <mark>Gulp</mark> looks out for changes in my project folder and reacts quickly. Gulp will call <mark>Jade</mark> (bro) to output html. Gulp will also tell Jekyll to get building (think <mark>Prepros</mark> but good), and dump site files neatly in a folder ready for some <mark>GitHub</mark>. more to come.</p></div></div>{% for post in site.posts %}<div class="row"><div class="col-sm-6 col-md-4"><div class="thumbnail c-content">{% assign foundImage = 0 %}
+{% assign images = post.content | split:"<img " %}
+{% for image in images %}
+  {% if image contains 'src=' %}
+    {% if foundImage == 0 %}
+      {% assign html = image | split:" width" | first %}
+      <a href="{{ post.url }}">
+      <img class="img-responsive img-rounded c-img-content" {{ html }} alt="ja ba">
+      {% assign foundImage = 1 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}<div class="caption caption-ad"><h5 class="text-center">{{ post.title }}</h5></a><p>The beginning of the post will display here... should we have a little bit of text.. or a lot of text.</p></div></div></div></div>{% endfor %}
