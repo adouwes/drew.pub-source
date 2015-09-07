@@ -1,35 +1,135 @@
-.header
-  padding: 30px 0
-  background: white
-  height: 100vh
-  position: fixed
-  display: flex
-  flex-direction: column
-  justify-content: space-between
+.ribbon
+  background-color: white
+  overflow: hidden
+  white-space: nowrap
+  @include transform(rotate(-32deg))
+  width: 400px
+  left: -47px
+  top: 40px
+  position: absolute
+  box-shadow: 0px 7px 17px 1px black
 
-.coollogo
-  min-height: 70px
-  max-width: 90%
-  padding-bottom: 17px
-  box-shadow: 10px 10px 10px
+.ribbon a
+  border: 3px solid black
+  color: black
+  display: block
+  font: bold 81.25% 'Helvetica Neue', Helvetica, Arial, sans-serif
+  margin: 1px 0
+  padding: 10px 50px
+  text-align: left
+  text-decoration: none
+  text-shadow: 0 0 5px #444
+
+.ad-logo-img
+  margin: 3px
+  margin-bottom: 0
 
 
-.nav li
-  width: 100%
-  text-align: right
+.ad-lines-1
+  height: 1px
+  border: 0
+  border-top: 4px solid black
+  margin: 3px 0
+  padding: 0
+  width: 55vw
+  margin-left: auto
+  margin-right: 0
+  box-shadow: 1px 1px 1px 1px black
+  @include animation(fadeIn 10s infinite $ease-in-out-quart)
+  @include animation-duration(6s)
 
-.specialemail li
-  margin: 20px 0
+@include keyframes(fadeIn)
+  0%
+    width: 0%
+  40%
+    width: 77%
+  90%
+    width: 10%
+  100%
+    width: 0%
 
-.dropdown-toggle
-  background: #B2B081
-  margin: 7px 0
+.ad-lines-2
+  height: 1px
+  border: 0
+  border-top: 3px solid black
+  margin: 0px 0
+  width: 77vw
+  margin-left: auto
+  margin-right: 0
+  box-shadow: 1px 1px 1px 1px black
+  @include animation(fadeIn 10s infinite $ease-in-out-quart)
+  @include animation-duration(7s)
 
-.responsive-logo
-  max-width: 50px
-  padding: 2px
-  margin-left: 17px
+.ad-lines-3
+  height: 1px
+  border: 0
+  border-top: 2px solid black
+  margin: 3px
+  padding: 0
+  width: 66vw
+  margin-left: auto
+  margin-right: 0
+  // margin-bottom: 10px
+  box-shadow: 1px 1px 1px 1px black
+  @include animation(fadeIn 10s infinite $ease-in-out-quart)
+  @include animation-duration(8s)
 
-.resp-header
-  background: #EBEBEB
-  position: relative
+.ad-lines-4
+  height: 1px
+  border: 0
+  border-top: 2px solid black
+  margin: 3px 0
+  padding: 0
+  width: 70vw
+  margin-left: auto
+  margin-right: 0
+  box-shadow: 1px 1px 1px 1px black
+  @include animation(fadeIn 10s infinite $ease-in-out-quart)
+  @include animation-duration(9s)
+
+.ad-lines-5
+  height: 1px
+  border: 0
+  border-top: 2px solid black
+  margin: 3px 0
+  padding: 0
+  width: 37vw
+  margin-left: auto
+  margin-right: 0
+  box-shadow: 1px 1px 1px 1px black
+  @include animation(fadeIn 10s infinite $ease-in-out-quart)
+  @include animation-duration(10s)
+
+.ad-lines-6
+  height: 1px
+  border: 0
+  border-top: 2px solid black
+  margin: 3px 0
+  padding: 0
+  width: 22vw
+  margin-left: auto
+  margin-right: 0
+  box-shadow: 1px 1px 1px 1px black
+
+.ad-lines-7
+  height: 1px
+  border: 0
+  border-top: 2px solid black
+  margin: 3px 0
+  padding: 0
+  width: 7vw
+  margin-left: auto
+  margin-right: 0
+  box-shadow: 1px 1px 1px 1px black
+
+.ad-lines-8
+  height: 1px
+  border: 0
+  border-top: 2px solid black
+  margin: 3px 0
+  padding: 0
+  width: 27vw
+  margin-left: auto
+  margin-right: 0
+  margin-bottom: 47px
+  box-shadow: 1px 1px 1px 1px black
